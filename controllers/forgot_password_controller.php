@@ -11,7 +11,7 @@
 
 	define('app_path', "${protocol}://${domain}" . '/');
 
-	require_once(app_path . 'lib/PHPMailer/PHPMailerAutoload.php')
+#	require_once(app_path . 'lib/PHPMailer/PHPMailerAutoload.php')
 	echo app_path . 'lib/PHPMailer/PHPMailerAutoload.php'
 
 	$msgDisplay = "";
