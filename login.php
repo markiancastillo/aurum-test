@@ -1,5 +1,6 @@
 <?php
     include('controllers/login_controller.php');
+    echo $_SERVER['DOCUMENT_ROOT'];
 ?>
 <!DOCTYPE html>
 <html>
