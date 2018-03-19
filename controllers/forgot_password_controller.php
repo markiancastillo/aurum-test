@@ -91,7 +91,7 @@
 					# 2 - output messages sent by client + from server
 					# 3 - as 2, + information about the initial connection - can help with STARTTLS failures
 					# 4 - as 3, plus even lower level information
-					$mail->SMTPDebug = 2; 
+					$mail->SMTPDebug = 0; 
 				
 					$mail->isSMTP();                                      		# Set mailer to use SMTP
 					$mail->Host = 'smtp.gmail.com';  					    	# Specify main and backup SMTP servers
