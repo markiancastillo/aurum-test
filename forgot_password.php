@@ -17,7 +17,6 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <a href="<?php echo app_path ?>login.php">Login</a>
 <form method ="POST">
     <div id="main-wrapper">
         <div class="container-fluid">

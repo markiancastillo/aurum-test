@@ -2,6 +2,14 @@
 	include('config.php');
 	include('security.php');
 
+	$protocol  = empty($_SERVER['HTTPS']) ? 'http' : 'https';
+    $port      = $_SERVER['SERVER_PORT'];
+    $disp_port = ($protocol == 'http' && $port == 80 || $protocol == 'https' && $port == 443) ? '' : ":$port";
+    $domain    = $_SERVER['SERVER_NAME'];
+
+#	define('app_path', "${protocol}://${domain}${disp_port}" . '/aurum/');
+    define('app_path', "${protocol}://${domain}");
+
 	$msgDisplay = "";
 	$msgSuccess = "<div class='alert alert-success alert-dismissable fade in'>
 						<a href='' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
