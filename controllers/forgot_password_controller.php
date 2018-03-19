@@ -82,7 +82,7 @@
 
 					$link = 'http://localhost:8088/aurum/reset_password.php?id=' . urlencode($accountID) . '&request=' . urlencode($accountEmail) . '&user=' . urlencode($accountLN);
 
-/*					# source:
+					# source:
 					# https://github.com/PHPMailer/PHPMailer/tree/5.2-stable
 					$mail = new PHPMailer;
 				
@@ -152,7 +152,7 @@
 					{
 						#echo 'Message has been sent.';
 						$msgDisplay = $msgSuccess;
-					} */
+					} 
 				}
 			}
 		}
