@@ -18,7 +18,6 @@ echo 'document root echo: ' . $_SERVER['DOCUMENT_ROOT'];
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <a href="<?php echo app_path ?>forgot_password.php">Forgot PW</a>
     <div id="main-wrapper">
         <div class="container-fluid">
             <div class="row">

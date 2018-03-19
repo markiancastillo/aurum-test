@@ -4,14 +4,15 @@
 #	require $_SERVER['DOCUMENT_ROOT'] . '/aurum/lib/PHPMailer/PHPMailerAutoload.php';
 #	require_once '../lib/PHPMailer/PHPMailerAutoload.php';
 
-#	 $protocol  = empty($_SERVER['HTTPS']) ? 'http' : 'https';
-#    $port      = $_SERVER['SERVER_PORT'];
-#    $disp_port = ($protocol == 'http' && $port == 80 || $protocol == 'https' && $port == 443) ? '' : ":$port";
-#    $domain    = $_SERVER['SERVER_NAME'];
+	$protocol  = empty($_SERVER['HTTPS']) ? 'http' : 'https';
+    $port      = $_SERVER['SERVER_PORT'];
+    $disp_port = ($protocol == 'http' && $port == 80 || $protocol == 'https' && $port == 443) ? '' : ":$port";
+    $domain    = $_SERVER['SERVER_NAME'];
 
- #   define('app_path', "${protocol}://${domain}${disp_port}" . '/aurum/');
+	define('app_path', "${protocol}://${domain}" . '/');
 
-#    echo app_path . 'lib/PHPMailer/PHPMailerAutoload.php';
+	require_once(app_path . 'lib/PHPMailer/PHPMailerAutoload.php')
+	echo app_path . 'lib/PHPMailer/PHPMailerAutoload.php'
 
 	$msgDisplay = "";
 	$msgMismatch = "<div class='alert alert-danger alert-dismissable fade in'>
