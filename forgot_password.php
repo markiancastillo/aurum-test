@@ -1,5 +1,5 @@
 <?php
-#	include('controllers/forgot_password_controller.php');
+	include('controllers/forgot_password_controller.php');
 ?>
 <!DOCTYPE html>
 <html>
