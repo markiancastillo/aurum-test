@@ -8,7 +8,7 @@
     $domain    = $_SERVER['SERVER_NAME'];
 
 #	define('app_path', "${protocol}://${domain}${disp_port}" . '/aurum/');
-    define('app_path', "${protocol}://${domain}");
+    define('app_path', "${protocol}://${domain}" . '/');
 
 	$msgDisplay = "";
 	$msgSuccess = "<div class='alert alert-success alert-dismissable fade in'>
