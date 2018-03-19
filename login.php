@@ -1,6 +1,5 @@
 <?php
 include('controllers/login_controller.php');
-#include('controllers/forgot_password_controller.php');
 echo 'document root echo: ' . $_SERVER['DOCUMENT_ROOT'];
 ?>
 <!DOCTYPE html>
