@@ -1,4 +1,5 @@
 <?php
+	header('Content-Type: text/html; charset=utf-8');
 	include('config.php');
 	include('security.php');
 #	require $_SERVER['DOCUMENT_ROOT'] . '/aurum/lib/PHPMailer/PHPMailerAutoload.php';
@@ -12,7 +13,7 @@
 
 	define('app_path', "${protocol}://${domain}" . '/');
 
-	require_once(app_path . 'lib/PHPMailer/PHPMailerAutoload.php');
+#	require_once(app_path . 'lib/PHPMailer/PHPMailerAutoload.php');
 	echo 'path: ' . app_path . 'lib/PHPMailer/PHPMailerAutoload.php';
 
 	$msgDisplay = "";
