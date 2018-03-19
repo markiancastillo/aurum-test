@@ -1,7 +1,6 @@
 <?php
-#include('controllers/login_controller.php');
-#include('controllers/forgot_password_controller.php');
-echo 'php code here';
+include('controllers/login_controller.php');
+include('controllers/forgot_password_controller.php');
 ?>
 <!DOCTYPE html>
 <html>
