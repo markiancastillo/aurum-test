@@ -144,9 +144,9 @@
 	
 					if(!$mail->send()) 
 					{
-						#echo 'Message was not sent.';
-						#echo 'Mailer error: ' . $mail->ErrorInfo;
-						$msgDisplay = $msgError;
+						echo 'Message was not sent.';
+						echo 'Mailer error: ' . $mail->ErrorInfo;
+						#$msgDisplay = $msgError;
 					}
 					else 
 					{
