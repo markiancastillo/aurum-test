@@ -12,7 +12,8 @@
 	define('app_path', "${protocol}://${domain}" . '/');
 
 #	require_once(app_path . 'lib/PHPMailer/PHPMailerAutoload.php')
-	echo app_path . 'lib/PHPMailer/PHPMailerAutoload.php'
+#	echo app_path . 'lib/PHPMailer/PHPMailerAutoload.php'
+	echo 'path' . app_path;
 
 	$msgDisplay = "";
 	$msgMismatch = "<div class='alert alert-danger alert-dismissable fade in'>
